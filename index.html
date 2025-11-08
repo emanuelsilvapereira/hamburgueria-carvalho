@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hamburgueria Carvalho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header (carregado via JS) -->
+  <div id="headerPlaceholder"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="reveal-up">Hambúrgueres artesanais</h1>
+        <p class="lead reveal-up" style="--delay:0.15s">Feitos com carne selecionada, pão artesanal e amor em cada mordida.</p>
+        <div class="hero-cta reveal-up" style="--delay:0.3s">
+          <a href="cardapio.html" class="btn">Ver Cardápio</a>
+          <a href="contato.html" class="btn btn-outline">Reservar mesa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title reveal-up">Destaques da casa</h2>
+      <div class="grid grid-3 cards">
+        <article class="card reveal-up" data-delay="0">
+          <img src="img/burger1.jpg" alt="Carvalho Clássico">
+          <div class="card-body">
+            <h3>Carvalho Clássico</h3>
+            <p>Pão artesanal, carne 180g, cheddar e molho da casa.</p>
+            <div class="card-meta">
+              <span class="price">R$ 25,00</span>
+              <a href="cardapio.html" class="link-small">Pedir</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal-up" data-delay="0.08">
+          <img src="img/burger2.jpg" alt="Duplo Bacon">
+          <div class="card-body">
+            <h3>Duplo Bacon</h3>
+            <p>Dois burgers, queijo, bacon crocante e cebola caramelizada.</p>
+            <div class="card-meta">
+              <span class="price">R$ 32,00</span>
+              <a href="cardapio.html" class="link-small">Pedir</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal-up" data-delay="0.16">
+          <img src="img/burger3.jpg" alt="Veggie Garden">
+          <div class="card-body">
+            <h3>Veggie Garden</h3>
+            <p>Hambúrguer vegetal, rúcula, tomate confit e maionese de ervas.</p>
+            <div class="card-meta">
+              <span class="price">R$ 27,00</span>
+              <a href="cardapio.html" class="link-small">Pedir</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer (carregado via JS) -->
+  <div id="footerPlaceholder"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cardápio — Hamburgueria Carvalho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="headerPlaceholder"></div>
+
+  <main>
+    <section class="section container">
+      <h2 class="section-title reveal-up">Cardápio</h2>
+      <p class="lead reveal-up">Escolha seu hambúrguer favorito — clique para ver mais detalhes.</p>
+
+      <div class="menu-list">
+        <!-- cada item usa o mesmo padrão; podemos gerar mais -->
+        <div class="menu-item reveal-up" data-delay="0">
+          <img src="img/burguer1.png" alt="">
+          <div class="menu-body">
+            <h3>Carvalho Clássico</h3>
+            <p>Pão artesanal, carne 180g, queijo cheddar e molho especial.</p>
+            <div class="menu-meta">
+              <span class="price">R$ 25,00</span>
+              <button class="btn btn-small open-modal" data-name="Carvalho Clássico" data-price="25,00">Ver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal-up" data-delay="0.08">
+          <img src="img/burguer2.png" alt="">
+          <div class="menu-body">
+            <h3>Duplo Bacon</h3>
+            <p>Dois hambúrgueres, queijo, bacon crocante e maionese da casa.</p>
+            <div class="menu-meta">
+              <span class="price">R$ 32,00</span>
+              <button class="btn btn-small open-modal" data-name="Duplo Bacon" data-price="32,00">Ver</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal-up" data-delay="0.16">
+          <img src="img/burguer3.png" alt="">
+          <div class="menu-body">
+            <h3>Veggie Garden</h3>
+            <p>Hambúrguer vegetal, pão integral e maionese de ervas.</p>
+            <div class="menu-meta">
+              <span class="price">R$ 27,00</span>
+              <button class="btn btn-small open-modal" data-name="Veggie Garden" data-price="27,00">Ver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal simples -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar">✕</button>
+      <h3 id="modalName"></h3>
+      <p id="modalDesc">Delicioso e suculento — escolha seus complementos na hora do pedido.</p>
+      <p class="price" id="modalPrice"></p>
+      <div class="modal-actions">
+        <button id="addToCart" class="btn">Adicionar ao pedido</button>
+        <button class="btn btn-outline modal-close">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="footerPlaceholder"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
